@@ -1,0 +1,25 @@
+'''In the students application,use the following fields like student ID,student name, father name,group,phone number,email id,address,submit and cancel'''
+from tkinter import*
+stu=Tk()
+stu.title("Student Application:")
+Label(stu,text='Student ID:').grid(row=0)
+Label(stu,text='Name:').grid(row=1)
+Label(stu,text='Father Name:').grid(row=2)
+Label(stu,text='Group:').grid(row=3)
+Label(stu,text='Mobile No').grid(row=4)
+Label(stu,text='Email ID:').grid(row=5)
+Label(stu,text='Address:').grid(row=6)
+Entry(stu).grid(row=0,column=1)
+Entry(stu).grid(row=1,column=1)
+Entry(stu).grid(row=2,column=1)
+Entry(stu).grid(row=3,column=1)
+Entry(stu).grid(row=4,column=1)
+Entry(stu).grid(row=5,column=1)
+Entry(stu).grid(row=6,column=1)
+Button(stu,text='Submit').grid(row=7)
+Button(stu,text='Cancel').grid(row=7,column=1)
+mainloop()
+
+
+      
+      
