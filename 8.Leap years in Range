@@ -1,0 +1,8 @@
+#8
+#Write a program to print leap years upto given range?
+start=int(input("Enter Start Value:"))
+end=int(input("Enter End Value:"))
+for year in range(start+1,end):
+    
+    if(year%4==0 and year%100!=0 or year%400==0):
+       print(year)
