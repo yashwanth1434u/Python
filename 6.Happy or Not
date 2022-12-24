@@ -1,0 +1,16 @@
+#6
+#Write a program to print given number is happy number or not.
+def sum(n):
+    s=0
+    while n!=0:
+        r=n%10
+        s+=r*r
+        n//=10
+    return s
+n=int(input())
+while(n>9):
+    n=sum(n)
+if n==1 or n==7:
+    print('Happy Number')
+else:
+    print('Not Happy Number')
