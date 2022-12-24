@@ -1,0 +1,15 @@
+#4
+#Write a program to find maximum and minimum from the given digit?
+num=int(input())
+temp=0
+minimum,maximum=9,0
+while(num > 0):
+        rem = num % 10;
+        temp=rem
+        if temp < minimum:
+            minimum = temp
+        if(rem > maximum):
+            maximum = rem;
+        num //= 10;
+print('Maximum:',maximum)
+print('Minimum:',minimum)
