@@ -1,0 +1,8 @@
+#15
+#Write a program to print Unique single number for the duplicate list?
+n=int(input())
+l=list(map(int,input().split()))
+print(l)
+s=set(l)
+x=list(s)
+print(x)
