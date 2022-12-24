@@ -1,0 +1,17 @@
+#14
+#Write a program to print previous happy number of the given number?
+def s(n):
+    s1=0
+    while(n!=0):
+        r=n%10
+        s1=s1+(r*r)
+        n=n//10
+    return s1    
+n=int(input('enter number:'))
+for i in range(n-1,0,-1):
+    n1=i
+    while i>9:
+        i=s(i)
+    if i==1 or i==7:
+        break
+print(n1)
