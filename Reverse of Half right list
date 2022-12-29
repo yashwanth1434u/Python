@@ -1,0 +1,12 @@
+#Write a program to reverse of the half right list. 
+
+n=int(input())
+l=list(map(int,input().split()))
+s1=len(l)//2+1
+s2=n-1
+while(s1<s2):
+    l[s1],l[s2]=l[s2],l[s1]
+    s1=s1+1
+    s2=s2-1
+print(l)
+
