@@ -1,0 +1,12 @@
+#Hackerank Rotation of Array.
+
+n=int(input())
+arr=list(map(int,input().split()))
+r=int(input())
+for i in range(0,r):
+    first=arr[0]
+    for j in range(0,n-1):
+        arr[j]=arr[j+1]
+    arr[n-1]=first
+for i in arr:
+    print(i,end=' ')
