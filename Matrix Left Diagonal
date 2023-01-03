@@ -1,0 +1,15 @@
+#print left diagonal matrix 
+n=int(input())
+A=[]
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    A.append(l)
+for i in A:
+    print(i)
+for i in range(n):
+    for j in range(n):
+        if j==i:
+           print(A[i][j],end=' ')
