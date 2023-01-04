@@ -1,0 +1,32 @@
+'''Write a program to find maximum element from the primary and secondary diagonal
+Explanation:
+1  2  3
+4   5 6
+7   8 2
+primary diagonal:1 5 2
+secondary diagonal:3 5 7
+maximum of two diagonals:7
+output:7'''
+
+n=int(input())
+A=[]
+p=[]
+s=[]
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    A.append(l)
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            p.append(A[i][j])
+for i in range(n):
+    for j in range(n):
+        if i+j==n-1:
+            s.append(A[i][j])
+sl=[]
+sl=p+s
+sl.sort()
+print(sl[-1])
