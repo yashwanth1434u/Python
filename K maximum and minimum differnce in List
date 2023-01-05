@@ -1,0 +1,17 @@
+'''write a program to calculate the last k maximum and minimum difference from the given list
+ ex:
+        n=6
+        1 21 32 10 8 6
+        k=3
+        order: 1 6 8 10 21 32
+        last three elements
+        10 21 32
+        max-min=32-10=22
+        output:22'''
+        
+n=int(input())
+l=list(map(int,input().split()))
+k=int(input())
+l.sort()
+m=l[k:n]
+print(max(m)-min(m))
