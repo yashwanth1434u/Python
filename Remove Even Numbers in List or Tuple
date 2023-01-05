@@ -1,0 +1,14 @@
+'''write a program to remove even numbers from the given list or tuple.
+    ex:
+        6
+        4 8 9 10 11 12
+    output:
+        [9,11]'''
+        
+n=int(input())
+l=list(map(int,input().split()))
+m=[]
+for i in range(0,n):
+    if l[i]%2!=0:
+        m.append(l[i])
+print(m)
