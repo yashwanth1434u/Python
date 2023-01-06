@@ -1,0 +1,19 @@
+'''write a program to identify the email company
+enter email id:
+    input:
+    yash@gmail.com
+    output:
+        you are using google account
+         input:
+    yash@yahoo.com
+    output:
+        you are using yahoo account'''
+        
+email=input()
+if email.endswith("@gmail.com"):
+    print("You are using Google Account")
+elif email.endswith("@yahoo.com"):
+    print("You are using Yahoo Account")
+elif email.endswith("@adc.aditya.ac.in"):
+    print("You are using Aditya Educational Institute Account")
+        
