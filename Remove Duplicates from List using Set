@@ -1,0 +1,12 @@
+''':write a program to remove duplicates from the group of elements
+ex:
+5
+1 2 3 4 4
+output:
+1 2 3 4'''
+
+n=int(input())#it denotes total number of elements
+l=list(map(int,input().split()))#it contains duplicates
+s=set(l)#it contains non repeated values
+for i in s:
+    print(i,end=' ')
