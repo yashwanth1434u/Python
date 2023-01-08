@@ -3,6 +3,7 @@ l=list(map(int,input().split()))
 s=[str(i) for i in l]
 res=int("".join(s))+1
 a=str(res)
+print(' '.join(a))
 
 '''You are given a interger represented as an integer array arr,where each arr[i] is ith digit of integer.
 These large integer does not contain any leading 0's.
