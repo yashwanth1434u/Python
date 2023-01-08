@@ -1,0 +1,33 @@
+n=int(input())
+a=[]
+suml=0
+sumr=0
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    a.append(l)
+for i in range(n):
+    for j in range(n):
+        if i == j:
+            suml+=a[i][j]
+for i in range(n):
+    for j in range(n):
+        if i+j==n-1:
+             sumr+=a[i][j]
+y=suml-sumr
+if y> 0:
+    print(suml-sumr)
+else:
+    print(sumr-suml) 
+ 
+'''
+Input: 
+2
+1
+2
+13   --> 1 2
+4    -->13 4
+primary diagonal sum= 1+4=5, Secondary daigonal sum=2+13=15
+Large Number-Small Number =15-5=10.'''
