@@ -1,0 +1,14 @@
+# Increment the integer by one and return the resulting array of digits.
+l=list(map(int,input().split()))
+s=[str(i) for i in l]
+res=int("".join(s))+1
+a=str(res)
+
+'''You are given a interger represented as an integer array arr,where each arr[i] is ith digit of integer.
+These large integer does not contain any leading 0's.
+Increment the integer by one and return the resulting array of digits.
+Example key: 
+1 2 3--> 123--> 123+1=124-->  1 2 4
+9 9 9--> 999--> 999+1=1000--> 1 0 0 0
+Input: 1 2 3 Output= 1 2 4
+Input: 9 9 9 Output: 1 0 0 0'''
