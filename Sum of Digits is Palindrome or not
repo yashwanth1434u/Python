@@ -1,0 +1,21 @@
+#Sum of digits is Palindrome or not
+n=int(input())
+s=str(n)
+sum=0
+for i in s:
+    sum=sum+int(i)
+sk=str(sum)
+if sum>10:
+    if sk==sk[::-1]:
+        print("1")
+    else:
+        print("0")
+else:
+    print("0")
+    
+'''
+Input: n=56
+Output: 1
+Explanation:
+The digit sum of 56 is 11.
+Since, 11 is a palindrome number then it prints 1.'''
