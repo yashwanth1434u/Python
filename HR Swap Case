@@ -1,0 +1,22 @@
+#hacker rank swap case
+
+def swap_case(s):
+    res=''
+    for i in s:
+        if i.isupper():
+            x=i.lower()
+            res=res+x
+        else:
+            x=i.upper()
+            res=res+x
+    return res
+
+if _name_ == '_main_':
+    s = input()
+    result = swap_case(s)
+    print(result)
+'''
+Input:
+HackerRank.com presents "Pythonist 2".
+Output:
+hACKERrANK.COM PRESENTS "pYTHONIST 2"'''
