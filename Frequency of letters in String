@@ -1,0 +1,14 @@
+'''write a program to print the following freequency
+    input:
+        aditya
+        2
+    output:
+        aaddiittyyaa'''
+s=input()
+n=int(input())
+l=len(s)
+res=''
+for i in range(0,l):
+        for j in range(0,n):
+            res=res+s[i]
+print(res)
