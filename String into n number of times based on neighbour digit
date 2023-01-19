@@ -1,0 +1,26 @@
+#write a program to convert given string into n number of times based on neighbour digit
+'''
+ex:
+input:
+s=a3b2c3
+output:
+aaabbccc
+'''
+s=input()
+res=''
+n=len(s)
+for i in range(0,n):
+    if s[i].isdigit():
+        k=int(s[i])
+        for j in range(0,k):
+            if s[i-1].isdigit():
+                res=res+s[i-1]
+print(res)
+
+'''
+n=6
+                     i
+0   1   2   3   4    5
+a   3   b   2   c    3
+                     k
+res=aaabbccc'''
