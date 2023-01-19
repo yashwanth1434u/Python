@@ -1,0 +1,28 @@
+'''
+    write a program to print the following series using with the given string
+    input:
+        aditya
+    output:
+        aditya
+        adity
+        adit
+        adi
+        ad
+        a'''
+        
+s=input()
+n=len(s)
+for i in range(n,0,-1):
+   # print(s[i:0])
+   for j in range(i):
+       print(s[j],end='')
+   print()
+
+'''output
+aditya
+aditya
+adity
+adit
+adi
+ad
+a'''
