@@ -1,0 +1,29 @@
+#write a program to print given string parenthesis is valid or invalid
+'''
+input:
+[()]
+
+output:
+   Yes
+
+ input:
+[[[[()]
+
+output:
+No'''
+
+def valid(s):#[}
+    while(True):
+        if '[]' in s:
+            s=s.replace('[]','')
+        elif '()' in s:
+            s=s.replace('()','')
+        elif '{}' in s:
+            s=s.replace('{}','')
+        else:
+           return not s    
+s=input()
+if valid(s):
+    print('Yes')
+else:
+    print('No')
