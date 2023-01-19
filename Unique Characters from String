@@ -1,0 +1,18 @@
+#write a program to print unique characters from the string
+'''
+ex:
+input:
+s=AABBXXDDFG
+output:
+ABXDFG'''
+
+s=input()
+x=''#empty string
+y=''
+for i in s:
+    if i not in x:
+        x=x+i #concatenating two strings or characters
+    else:
+        y=y+i
+print(x)
+print(y)
