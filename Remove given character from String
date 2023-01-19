@@ -1,0 +1,13 @@
+#write a program to remove given character from the string.
+'''
+ex:
+input:
+    aditya
+    d
+    output:
+    aitya'''
+    
+s=input()
+c=input()
+s=s.replace(c[0],'')
+print(s)
