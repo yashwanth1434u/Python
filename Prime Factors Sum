@@ -1,0 +1,28 @@
+def primefactor(n):
+    c=2
+    s=0
+    while n>1:
+        if n%c==0:
+            s+=c
+            n=n//c
+        else:
+            c=c+1
+    return s
+        
+t=int(input())
+res=0
+for i in range(t):
+    n=int(input())
+    f=primefactor(n)
+    res+=f
+print(res)
+
+'''INPUT:
+5 test cases
+6 : primefactors=2 3    sum = 2+3=5
+9 : primefactors=3 3    sum = 3+3=6
+12: primefactors=2 2 3  sum=7
+17:primefactors =17     sum= 17
+5040:pf=2 2 2 2 3 3 5 7 sum=26
+OUTPUT:
+Total Sum: 5+6+7+17+26=61'''
