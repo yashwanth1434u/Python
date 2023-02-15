@@ -1,0 +1,13 @@
+#Given number is a power of two or not
+n=int(input())
+if n>0 and (n&(n-1))==0:
+    print('YES')
+else:
+    print("NO")
+    
+'''Input:
+10 
+OUTPUT:
+NO
+INPUT:8
+OUTPUT: YES'''
