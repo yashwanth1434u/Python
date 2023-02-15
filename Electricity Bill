@@ -1,0 +1,22 @@
+#bill
+m=int(input())
+t=int(input())
+if 0<=t<=150:
+    bill=3*t
+elif 151<=t<=350:
+    bill=(3.75*t)+100
+elif 351<=t<=450:
+        bill=(4*t)+250
+elif 451<=t<=600:
+        bill=(4.5*t)+300
+elif t>600:
+        bill=(5*t)+400
+print(m)
+print(int(bill))
+
+'''INPUT: 
+1071 (meter number)
+100 (units)
+OUTPUT:
+1071 (meter number)
+300 (bill)'''
