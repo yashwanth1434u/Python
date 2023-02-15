@@ -1,0 +1,13 @@
+# vowel or Consonant
+s='aeiouAEIOU'
+ch=input()
+if ch in s:
+    print('Vowel')
+else:
+    print('Consonant')
+ '''
+ INPUT: O
+ OUTPUT: Vowel
+ INPUT: C
+ OUTPUT: Consonant'''
+ 
