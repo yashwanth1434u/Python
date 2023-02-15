@@ -1,0 +1,16 @@
+#marks grade
+n=int(input())
+if n>40:
+    if n<51:
+        print('Third Class')
+    elif n<61:
+        print('Second Class')
+    elif n<81:
+        print('First Class')
+    elif n<101:
+        print("Distinction")
+else:
+    print('Fail')
+'''
+INPUT: 100
+OUTPUT: Distinction'''
