@@ -1,0 +1,11 @@
+#smallest element in list without arrays
+
+n=int(input())
+l=list(map(int,input().split()))
+print(min(l))
+
+'''INPUT: 
+6
+-3 1 2 4 3 5
+OUTPUT:
+-3'''
