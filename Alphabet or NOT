@@ -1,0 +1,10 @@
+#ALPHABET OR NOT
+c=input()
+if c.isalpha():
+    print(c,'is an Alphabet')
+else:
+    print(c,'is not an Alphabet')
+    
+ '''INPUT:
+ C
+ C is an alphabet'''
