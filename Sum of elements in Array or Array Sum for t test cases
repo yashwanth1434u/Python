@@ -1,0 +1,8 @@
+#Sum of n numbers entered by user or array sum for  t testcases
+t= int(input())
+for i in range(t):
+    k=0
+    n=int(input())
+    l=list(map(int,input().split()))
+    k=sum(l)
+    print(k)
