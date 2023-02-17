@@ -1,0 +1,18 @@
+#summation of digits of fact(n)
+def factorial(n):
+    if n==0:
+        return 1
+    else:
+        return n*factorial(n-1)
+def digit(n):
+    fact=factorial(n)
+    sum=0
+    while fact>0:
+        sum+=fact%10
+        fact//=10
+    return sum
+t=int(input())
+for i in range(t):
+    n=int(input())
+    k=digit(n)
+    print(k)
