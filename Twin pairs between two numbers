@@ -1,0 +1,18 @@
+#Twin pairs between two numbers(primes)
+def prime(n):
+    if n<2:
+        return False
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            return False
+    return True
+def twin(m,n):
+    count=-0
+    for n in range(m,n):
+        if prime(n) and prime(n+2):
+            count+=1
+    return count
+m=int(input())
+n=int(input())
+count=twin(m,n)
+print(count)
