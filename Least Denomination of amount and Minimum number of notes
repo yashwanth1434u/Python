@@ -1,0 +1,23 @@
+#least denomination of given amount and minimum number of notes
+def find_minimum_notes(amount):
+    deno=[2000,500,200,100,50,20,10,2,5,1]
+    notes=[]
+    for d in deno:
+        count=amount//d
+        amount%=d
+        notes.append(count)
+    return notes
+def print_notes(amount,notes):
+    deno=[2000,500,200,100,50,20,10,2,5,1]
+    for i in range(len(deno)):
+        if notes[i]>0:
+            print(str(deno[i])+":"+str(notes[i]))
+amount=int(input())
+notes=find_minimum_notes(amount)
+print_notes(amount,notes)
+
+'''INPUT:
+10
+OUTPUT:
+10:1
+10= amount min denominations=1'''
