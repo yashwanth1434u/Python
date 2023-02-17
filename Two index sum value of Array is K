@@ -1,0 +1,19 @@
+#Array of int and k.To find indexes of two elements in array which sum is equal to k
+def index(a,k):
+    index=[]
+    for i in range(len(a)):
+        for j in range(i+1,len(a)):
+            if a[i]+a[j]==k:
+                index.append((i,j))
+    return index
+
+a=list(map(int,input().split()))
+k=int(input())
+index=index(a,k)
+if len(index)==0:
+    print(k)
+else:
+    for i in index:
+        i, j= i
+        print(i, j)
+ 
