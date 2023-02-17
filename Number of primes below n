@@ -1,0 +1,17 @@
+#Number of primes below n or strictly less than n.
+def prime(num):
+    if num<2:
+        return False
+    for i in range(2,num):
+        if num%i==0:
+            return False
+    return True
+def belowprimes(n):
+    l=[]
+    for i in range(2,n):
+        if prime(i):
+            l.append(i)
+    return l
+n=int(input())
+l=belowprimes(n)
+print(len(l))
