@@ -1,0 +1,5 @@
+#Count of unique numbers in a duplicate list
+l=list(map(int,input().split()))
+s=set(l)
+x=list(s)
+print(len(x))
