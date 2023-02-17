@@ -1,0 +1,19 @@
+#SUM OF GIVEN ELEMENTS AS FOLLOW
+
+n=int(input())
+l= list(map(int,input().split()))
+
+sum=0
+product=1
+for i in range(len(l)):
+    product*=l[i]
+    sum+=product
+print(sum)
+
+'''
+INPUT:
+'''N=5
+2 3 5 6 7
+OUTPUT:
+1478
+Explanation: Sum=2+[2*3]+[2*3*5]+[2*3*5*6]+[2*3*5*6*7]=1478'''
