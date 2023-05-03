@@ -1,0 +1,13 @@
+#phone book program
+phonebook={}
+n=int(input('how many contacts you want to enter'))
+for i in range(1,n+1):
+    name=input('Enter name')
+    phno=int(input('Enter phone number'))
+    phonebook[name]=phno
+
+x=input('Enter name :')
+if x in phonebook:
+    print(phonebook.get(x))
+else:
+    print('there is no phone number with your contact name')
