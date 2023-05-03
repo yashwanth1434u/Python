@@ -1,0 +1,9 @@
+# write a program to create player dictionary
+   # (note:read the pno and pname at the time of runtime)
+ind={}
+n=int(input("Enter no of players:"))
+for i in range(1,n+1):
+    pno=int(input('Enter player number:'))
+    pname=input('Enter player name')
+    ind[pno]=pname
+print(ind)
