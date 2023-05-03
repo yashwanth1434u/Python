@@ -1,0 +1,17 @@
+'''
+write a program to prepare student dictionary
+    (note:sno,sname,group,college branch,phone number)
+ex:
+    enter student no:2
+output:
+    sname:ramesh
+    group:mpcs
+    college:adckkd
+    phone number:12356'''
+stu={10:[10,'Yashwanth','MPCS','ADCGPT',94411],11:[11,'Srinivas','MCCS','ADCGPT',98850]}
+n=int(input("Enter Student Number: "))
+print('Sno: :',stu.get(n)[0])
+print('S Name: ',stu.get(n)[1])
+print('Group:',stu.get(n)[2])
+print('Branch:',stu.get(n)[3])
+print('Phone:',stu.get(n)[4])
