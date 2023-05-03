@@ -1,0 +1,5 @@
+d={12:['sachin',100],34:'dhoni',45:'kohli'}
+print(d)
+pno=int(input('Enter player number'))
+print(d.get(pno)[0])
+print(d.get(pno)[1])
