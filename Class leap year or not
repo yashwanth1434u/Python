@@ -1,0 +1,13 @@
+#program to print given year is leap year or not using class
+class Solution:
+    def leap(self,year):
+        if year<1:
+            return False
+        if year%4==0 and year%100!=0 or year%400==0:
+            return True
+year=int(input())
+s=Solution()
+if s.leap(year):
+    print('Leap Year')
+else:
+    print('Non Leap Year')
