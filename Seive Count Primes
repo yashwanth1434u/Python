@@ -1,0 +1,17 @@
+#program to print count of the n prime numbers
+import math
+seive=[]
+n=int(input())
+n=n+1#21
+for i in range(0,n):
+    seive.append(1)
+x=int(math.sqrt(n))#4
+for i in range(2,x+1):#i=5<5
+    if seive[i]==1:#false
+        for j in range(i*i,n,i):#j=21<21
+            seive[j]=0
+count=0
+for i in range(2,n):
+    if seive[i]==1:
+        count+=1
+print(count)
