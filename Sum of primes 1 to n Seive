@@ -1,0 +1,18 @@
+#write a program to print sum of 1 to n prime numbers
+import math
+n=1000001
+sieve=[1]*n#filling 1 value from 0 to n-1 in sieve list
+sieve[0]=0
+sieve[1]=0
+m=int(math.sqrt(n))
+for i in range(2,m+1):
+    if sieve[i]==1:
+        for j in range(i*i,n,i):#factors of i will fill with 0
+            sieve[j]=0
+m=int(input())
+l=[]
+for i in range(1,m+1):
+    if sieve[i]==1:
+        l.append(i)
+
+print(sum(l))
