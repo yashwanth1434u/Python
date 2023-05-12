@@ -1,0 +1,24 @@
+'''Write a program to print twin primes in the given range(inclusive)
+Input:
+5 19
+
+Output:
+5    7
+11 13
+17 19'''
+import math
+def solve(a,b):
+    n=1000001
+    seive=[1]*n
+    seive[0]=0
+    seive[1]=0
+    x=int(math.sqrt(n))
+    for i in range(2,x+1):
+        if seive[i]==1:
+            for j in range(i*i,n,i):
+                seive[j]=0
+    for i in range(a+1,b):
+        if seive[i]==1 and seive[i+2]==1 and b-i>=2:
+            print(i,i+2)
+start,end=map(int,input().split())
+solve(start,end)
