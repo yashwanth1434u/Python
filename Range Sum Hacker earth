@@ -1,0 +1,29 @@
+'''You are given an array of N integers.
+You have to answer Q queries.
+Each query contains two integers L and R
+For each query print the sum of integers in array from index L to R
+
+Input :
+
+First line will contain an integer T (number of test cases).
+T blocks of line follows.
+First line of each block contains an integer N (number of array elements).
+Next line contains N integers (array elements).
+Next line contains an integer Q (number of queries).
+Next Q lines contain two integers L and R
+
+Ouput :
+
+Print required answer for each query'''
+
+t=int(input())
+for i in range(t):
+    n=int(input())
+    arr=list(map(int,input().split()))
+    pf=[0]*(n+1)
+    for i in range(n+1):
+        pf[i]=pf[i-1]+arr[i-1]
+    q=int(input())
+    for j in range(q):
+        l,r=map(int,input().split())
+        print(pf[r]-pf[l-1])
