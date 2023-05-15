@@ -1,0 +1,20 @@
+import math
+def prime(n):
+    if n<=1:
+        return False
+    x=int(math.sqrt(n))
+    for i in range(2,x+1):
+        if n%i==0:
+            return False
+    return True
+def primesum(n):
+    low=1000001
+    pair=None
+    for i in range(2,n):
+        if prime(i) and prime(n-i): 
+            if min(i,n-i)<low:
+                pair=(i,n-i)
+    return pair
+n=int(input())
+pair=primesum(n)
+print(pair[1],pair[0])
