@@ -1,0 +1,16 @@
+def equili(l,n):
+    if n==1:
+        return 1
+    rsum=sum(l)
+    lsum=0
+    for i in range(n):
+        rsum-=l[i]
+        if lsum==rsum:
+            return i+1
+        lsum+=l[i]
+    return -1
+t=int(input())
+for i in range(t):
+    n=int(input())
+    l=list(map(int,input().split()))
+    print(equili(l,n))
