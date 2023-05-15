@@ -1,0 +1,16 @@
+def equilibrium(arr):
+    n=len(arr)
+    total=sum(arr)
+    left=0
+    for i in range(n):
+        total=total-arr[i]
+        if left==total:
+            return i+1
+        left=left+arr[i]
+    return -1
+t=int(input())
+for i in range(t):
+    n=int(input())
+    arr=list(map(int,input().split()))
+    pos=equilibrium(arr)
+    print(pos)
