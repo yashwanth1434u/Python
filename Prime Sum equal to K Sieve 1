@@ -1,0 +1,17 @@
+import math
+n=2500001
+sieve=[1]*n
+sieve[0]=0
+sieve[1]=0
+m=int(math.sqrt(n))
+for i in range(2,m+1):
+    if sieve[i]==1:
+        for j in range(i*i,n,i):
+            sieve[j]=0
+m=int(input())
+for i in range(2,(m//2)+1):
+    if sieve[i]==1 and sieve[m-i]==1:
+        print(i,m-i)
+        
+
+        
