@@ -1,0 +1,17 @@
+#Number of primes below n or strictly less than n.
+import math
+n = 100001
+x = int(math.sqrt(n))
+# Create a sieve to mark non-prime numbers
+sieve = [True] * n
+for i in range(2, x+1):
+    if sieve[i]:
+        for j in range(i*i, n, i):
+            sieve[j] = False
+# Count the number of primes up to each number in the sieve
+pf = [0] * (n+1)
+for i in range(2, n):
+    pf[i] = pf[i-1] + sieve[i]
+# Print the number of primes less than m
+m = int(input())
+print(pf[m-1])
