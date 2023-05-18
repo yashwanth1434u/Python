@@ -1,0 +1,14 @@
+#count of sum of sub array sum less than K
+l=list(map(int,input().split()))
+k=int(input())
+n=len(l)
+count=0
+for i in range(0,n):
+    sum=0
+    for j in range(i,n):
+        if sum+l[j]<k:
+            sum+=l[j]
+            count+=1
+        else:
+            break
+print(count)
