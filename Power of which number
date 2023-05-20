@@ -1,0 +1,18 @@
+#Write a program to tell the given number is any power of the number or not.check upto the given number
+class Solution:
+    def isPowerOf(self,i,n):
+        if n==1:
+            return True
+        elif n%i!=0:
+            return False
+        else:
+            return self.isPowerOf(i,n//i)
+s = Solution()
+n = int(input())
+for i in range(2,n):
+    if s.isPowerOf(i,n):
+        print(i)
+
+'''Input:16
+Output:2
+4'''
