@@ -1,0 +1,16 @@
+def ispowerofnumber(n,i):
+    if n==1:
+        return True
+    if n<1 or n%i!= 0:
+        return False
+    return ispowerofnumber(n/i,i)
+
+n=int(input())
+if n>0:
+   print(1)
+for i in range(2,n):
+    if ispowerofnumber(n,i):
+     print(i)
+
+''' Input:16
+Output: 2 4'''
