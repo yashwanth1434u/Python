@@ -1,0 +1,13 @@
+class Solution:
+    def fib(self, n: int) -> int:
+        a=-1
+        b=1
+        for i in range(n+1):
+            c=a+b
+            a=b
+            b=c
+        return c
+
+'''Input: n = 4
+Output: 3
+Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3'''
