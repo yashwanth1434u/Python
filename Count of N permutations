@@ -1,0 +1,19 @@
+from itertools import permutations
+s=input().split()
+n=int(input())
+p=permutations(s,n)
+c=0
+for i in list(p):
+    #print(i)
+    c+=1
+print(c)
+
+"Input:s:a b c
+       n:2
+  Output:6
+Explanation:('a', 'b')
+('a', 'c')
+('b', 'a')
+('b', 'c')
+('c', 'a')
+('c', 'b')''' 
