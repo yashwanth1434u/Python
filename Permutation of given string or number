@@ -1,0 +1,15 @@
+from itertools import permutations
+s=input()
+p=permutations(s)
+for i in list(p):
+    print(i)
+'''
+Input:
+abc
+Output:
+('a', 'b', 'c')
+('a', 'c', 'b')
+('b', 'a', 'c')
+('b', 'c', 'a')
+('c', 'a', 'b')
+('c', 'b', 'a')'''
