@@ -1,0 +1,11 @@
+from itertools import permutations
+s=input().split()
+p=permutations(s)
+c=0
+for i in list(p):
+    c+=1
+print(c)
+
+'''Input:a b c
+  Output:6'''
+
