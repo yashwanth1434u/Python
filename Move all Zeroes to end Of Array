@@ -1,0 +1,11 @@
+import time
+start_time = time.time()
+l = list(map(int, input().split()))
+left = 0
+for right in range(len(l)):
+    if l[right] != 0:
+        l[left], l[right] = l[right], l[left]
+        left += 1
+print(l)
+end_time = time.time()
+print("Time taken:", end_time - start_time, "seconds")
